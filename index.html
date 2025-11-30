@@ -5,77 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Portfólio</title>
+    <script src="script.js"></script>
+    <title>Portfólio - Samuel Pereira</title>
 </head>
 
 <body>
-
     <div class="particula"></div>
+
     <nav class="navegacao">
         <ul class="menu">
-
-            <li>
-                <a href="#inicio" class="menu-link">Início</a>
-            </li>
-            <li>
-                <a href="#sobre" class="menu-link">Sobre</a>
-            </li>
-            <li>
-                <a href="#projetos" class="menu-link">Projetos</a>
-            </li>
-            <li>
-                <a href="#contato" class="menu-link">Contato</a>
-            </li>
-
+            <li><a href="#inicio" class="menu-link">Início</a></li>
+            <li><a href="#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="#projetos" class="menu-link">Projetos</a></li>
+            <li><a href="#contato" class="menu-link">Contato</a></li>
         </ul>
     </nav>
-    <main id="inicio" class="cabecalho">
 
-
-        <img src="./Samuel.png" alt="Foto Samuel Pereira" class="Foto-Perfil">
+    <header id="inicio" class="cabecalho-principal">
+        <img src="./Samuel.png" alt="Foto de Perfil de Samuel Pereira" class="foto-perfil">
         <h1>Samuel Pereira</h1>
-        <p class="paragrafo">Desenvolverdor Front End</p>
-    </main>
+        <p class="paragrafo-titulo">Desenvolvedor Front End</p>
+    </header>
 
     <section id="sobre" class="sobre">
         <h2 class="sobre-titulo">Sobre Mim</h2>
         <div class="sobre-caixa">
-            <p class="sobre-paragrafo">Um entusiasta da tecnologia que está dando seus primeiros passos em programação,
-                focando intensamente no Front-End. Ele se dedica a dominar as bases de HTML e CSS para construir a
-                estrutura e o estilo visual de websites. Atualmente, seu foco principal é iniciar a aprendizagem de
-                JavaScript.
+            <p class="sobre-paragrafo">
+                Um entusiasta da tecnologia que está dando seus primeiros passos em programação,
+                focando intensamente no **Front-End**. Ele se dedica a dominar as bases de **HTML e CSS**
+                para construir a estrutura e o estilo visual de websites. Atualmente, seu foco principal é iniciar a
+                aprendizagem de **JavaScript**.
             </p>
         </div>
     </section>
 
     <section id="projetos" class="projetos">
         <h2 class="projetos-titulo">Meus Projetos</h2>
-        <div class="projeto-caixa">
+        <div class="projetos-grade">
 
             <div class="projetos-card">
-                <img src="./Uber.jpg" alt="projeto-uber" class="projeto-imagem">
+                <img src="./Uber.jpg" alt="Projeto Landing Page da Uber" class="projeto-imagem">
                 <div class="caixa-txt">
                     <h3 class="info-projetos">Site Uber</h3>
                     <p class="paragrafo-projetos">Site de estudos sobre a empresa Uber, criando uma landing page.</p>
                 </div>
+                <div class="card-overlay">
+                    <h4 class="overlay-titulo">Landing Page Uber</h4>
+                    <p class="overlay-descricao">Uma recriação da landing page da Uber com foco em layout responsivo e técnicas avançadas de CSS.</p>
+                    <div class="overlay-botoes">
+                        <a href="#" target="_blank" class="botao-overlay">Ver Projeto</a>
+                        <a href="#" target="_blank" class="botao-overlay">Ver Código</a>
+                    </div>
+                </div>
             </div>
 
             <div class="projetos-card">
-                <img src="./Amazon.jpg" alt="projeto-amazon" class="projeto-imagem">
+                <img src="./Amazon.jpg" alt="Projeto Exemplo Amazon" class="projeto-imagem">
                 <div class="caixa-txt">
                     <h3 class="info-projetos">Exemplo Amazon</h3>
-                    <p class="paragrafo-projetos">Essa imagem é usada para preencher o meu Portfólio, futuramente será
-                        preenchida com um projeto meu.</p>
+                    <p class="paragrafo-projetos projeto-placeholder">Em breve: Aqui será preenchido com um projeto real.</p>
                 </div>
-
+                <div class="card-overlay">
+                    <h4 class="overlay-titulo">Exemplo Amazon (Em Breve)</h4>
+                    <p class="overlay-descricao">Futuro projeto que focará na manipulação do DOM e lógica de carrinho com JavaScript.</p>
+                    <div class="overlay-botoes">
+                        <a href="#" class="botao-overlay desabilitado">Ver Projeto</a>
+                        <a href="#" class="botao-overlay desabilitado">Ver Código</a>
+                    </div>
+                </div>
             </div>
 
             <div class="projetos-card">
-                <img src="./olx-page.jpg" alt="projeto-olx" class="projeto-imagem">
+                <img src="./olx-page.jpg" alt="Projeto Exemplo OLX" class="projeto-imagem">
                 <div class="caixa-txt">
                     <h3 class="info-projetos">Exemplo OLX</h3>
-                    <p class="paragrafo-projetos">Essa imagem é usada para preencher o meu Portfólio, futuramente será
-                        preenchida com um projeto meu.</p>
+                    <p class="paragrafo-projetos projeto-placeholder">Em breve: Aqui será preenchido com um projeto real.</p>
+                </div>
+                <div class="card-overlay">
+                    <h4 class="overlay-titulo">Exemplo OLX (Em Breve)</h4>
+                    <p class="overlay-descricao">Recriação da interface da OLX, explorando componentes reutilizáveis e CSS Grid avançado.</p>
+                    <div class="overlay-botoes">
+                        <a href="#" class="botao-overlay desabilitado">Ver Projeto</a>
+                        <a href="#" class="botao-overlay desabilitado">Ver Código</a>
+                    </div>
                 </div>
             </div>
 
@@ -84,19 +96,24 @@
     </section>
 
     <section id="contato" class="contatos">
-        <h2 class="contatis-titulo">Entre em Contato</h2>
+        <h2 class="contatos-titulo">Entre em Contato</h2>
         <form class="formulario-contato" id="formulario">
             <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form">
+                <label for="nome-contato" class="sr-only">Seu Nome</label>
+                <input type="text" id="nome-contato" placeholder="Nome" class="campo-form" required>
             </div>
             <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua Mensagem"></textarea>
-               <div>
-                <button type="submit" class="botao-form">Enviar E-mail</button>
-                </div>
+                <label for="mensagem-contato" class="sr-only">Sua Mensagem</label>
+                <textarea id="mensagem-contato" class="campo-form" placeholder="Digite sua Mensagem" rows="5" required></textarea>
             </div>
+
+            <button type="submit" class="botao-form">Enviar E-mail</button>
         </form>
     </section>
+
+    <footer class="rodape">
+        <p>&copy; 2025 Samuel Pereira. Todos os direitos reservados.</p>
+        </footer>
 
 </body>
 
